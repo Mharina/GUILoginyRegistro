@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "625868315035",
+    "project_id": "task08gui",
+    "storage_bucket": "task08gui.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625868315035:android:d88072c2a3753d9bd3a93e",
+        "android_client_info": {
+          "package_name": "com.example.task08guiloginyregistro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCO5g523Y9Vx3AmkO-hlyry5h-aw2-2Eqg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
