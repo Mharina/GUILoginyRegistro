@@ -40,6 +40,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/icon_account"
+                android:drawablePadding="10dp"
                 android:hint="@string/username"/>
 
         </com.google.android.material.textfield.TextInputLayout>
