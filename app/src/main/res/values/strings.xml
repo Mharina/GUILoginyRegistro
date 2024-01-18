@@ -4,4 +4,9 @@
     <string name="password">Contraseña</string>
     <string name="login">Iniciar Sesión</string>
     <string name="singIn">Crear Cuenta</string>
+    <string-array name="tipoSoldado">
+        <item>Cabo</item>
+        <item>Sargento</item>
+        <item>Capitán</item>
+    </string-array>
 </resources>
