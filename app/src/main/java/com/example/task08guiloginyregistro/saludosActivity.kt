@@ -10,7 +10,6 @@ import androidx.appcompat.app.AppCompatActivity
 class saludosActivity : AppCompatActivity(){
 
     private lateinit var receivedEmail: String
-    private lateinit var receivedPassword: String
     private lateinit var btnVolver: Button
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {

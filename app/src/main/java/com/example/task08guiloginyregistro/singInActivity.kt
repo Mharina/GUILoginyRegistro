@@ -48,13 +48,10 @@ class singInActivity : AppCompatActivity() {
                 if (email.text.isNotEmpty() && Password.text.isNotEmpty()){
                     auth.createUserWithEmailAndPassword(email.text.toString(), Password.text.toString()).addOnCompleteListener(this) { task ->
                             if (task.isSuccessful) {
-                                // Sign in success, update UI with the signed-in user's information
                                 Log.d(TAG, "Autenticacion del ususario Correcta")
-                                //val user = auth.currentUser
                                 val intent = Intent(this@singInActivity, saludosActivity::class.java)
                                 intent.putExtra("email", email.text.toString())
                                 startActivity(intent)
-
 
                             } else {
                                 val builder = AlertDialog.Builder(this)
