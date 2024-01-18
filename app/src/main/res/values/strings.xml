@@ -4,7 +4,4 @@
     <string name="password">Contraseña</string>
     <string name="login">iniciar sesión</string>
     <string name="singIn">Crear Cuenta</string>
-    <string name="forgot_password">Contraseña Olvidada</string>
-
-
 </resources>

@@ -6,7 +6,6 @@ import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
-import android.widget.ImageButton
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.Firebase
@@ -20,12 +19,8 @@ class singInActivity : AppCompatActivity() {
     private lateinit var email : EditText
     private lateinit var Password : EditText
     private lateinit var btnLogin : Button
-    private lateinit var btnForgotPassword : Button
-    private lateinit var btnLoginGoogle : Button
-    private lateinit var btnLoginFacebook : Button
     private lateinit var btnSingIn : Button
     private lateinit var auth: FirebaseAuth
-    private lateinit var btnatras : ImageButton
 
     //VARIABLE SISTEMA LOG
     private val TAG = "singInActivity"
@@ -47,12 +42,6 @@ class singInActivity : AppCompatActivity() {
         Password = findViewById(R.id.contraseña)
         btnLogin = findViewById(R.id.btnLogin)
         btnSingIn = findViewById(R.id.btnSingIn)
-        btnatras = findViewById(R.id.imageButton)
-
-        btnatras.setOnClickListener{
-            var intent = Intent(this@singInActivity, loginActivity::class.java)
-            startActivity(intent)
-        }
 
         try {
             btnLogin.setOnClickListener{
@@ -76,35 +65,20 @@ class singInActivity : AppCompatActivity() {
                                 dialog.show()
                             }
                     }
-
                 }else{ Log.d(TAG, "Debes rellenar los campos") }
-
              }
         } catch (e: Exception) {
             Log.d(TAG, "Error en la autentificacion del usuario")
         }
-
-
-
-
         try {
-
                 btnSingIn.setOnClickListener(View.OnClickListener {
                     val intent = Intent(this@singInActivity, loginActivity::class.java)
                     startActivity(intent)
                 })
-
-
-
         } catch (e: Exception) {
             Log.d(TAG, "Usuario No Creado Correctamente")
         }
-
-
-
     }
-
-
 }
 
 

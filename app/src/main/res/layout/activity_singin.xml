@@ -25,7 +25,6 @@
             android:layout_marginStart="60dp"
             android:layout_marginTop="100dp"
             android:layout_marginEnd="60dp"
-
             android:src="@drawable/caballo" />
 
         <!--USERNAME-->
@@ -69,7 +68,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
+            <!--BUTON LOGIN-->
             <Button
                 android:id="@+id/btnLogin"
                 style="?attr/materialButtonOutlinedStyle"
@@ -85,7 +84,7 @@
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:cornerRadius="5dp" />
-
+            <!--BUTON SING IN-->
             <Button
                 android:id="@+id/btnSingIn"
                 style="?attr/materialButtonOutlinedStyle"
@@ -104,31 +103,6 @@
                 app:strokeColor="#FFFFFF" />
 
         </LinearLayout>
-
-        <!--BUTON LOGIN-->
-
-
-        <!--BUTON SING IN-->
-
-
-        <!--BUTON FORGOT PASSWORD-->
-        <Button
-
-            android:id="@+id/forgot_password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginEnd="60dp"
-            android:backgroundTint="#FFFFFF"
-            android:elevation="2dp"
-            android:shadowColor="#FFFFFF"
-            android:text="@string/forgot_password"
-            android:textSize="13sp"
-            android:textStyle="normal"
-            app:cornerRadius="5dp"
-            app:strokeColor="#FFFFFF" />
-
     </androidx.appcompat.widget.LinearLayoutCompat>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

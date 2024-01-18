@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.RadioButton
 import android.widget.Spinner
 import androidx.appcompat.app.AlertDialog
@@ -35,7 +36,12 @@ class loginActivity : AppCompatActivity() {
         btnSingIn = findViewById(R.id.btnSingIn)
         auth= Firebase.auth
 
+        val btnatras: ImageButton = findViewById(R.id.imageButton)
 
+        btnatras.setOnClickListener{
+            var intent = Intent(this@loginActivity, singInActivity::class.java)
+            startActivity(intent)
+        }
 
         try {
             btnSingIn.setOnClickListener{

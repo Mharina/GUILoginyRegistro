@@ -52,7 +52,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
-                android:text="tipo de soldado" />
+                android:text="Tipo de soldado" />
         </LinearLayout>
 
         <LinearLayout
@@ -99,43 +99,47 @@
             android:id="@+id/linear2"
             android:layout_width="match_parent"
             android:layout_height="38dp"
-            android:layout_marginTop="110dp"
+            android:layout_marginTop="200dp"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
-                android:text="Sexo" />
+                android:text="Notificaciones" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5"
-                android:text="tipo de soldado" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="38dp"
-            android:layout_marginTop="145dp">
-            
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Acepta los terminos y condiciones" />
+
         </LinearLayout>
 
         <Button
             android:id="@+id/btnSingIn"
             android:layout_width="match_parent"
             android:layout_height="62dp"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="290dp"
             android:backgroundTint="#bf7e68"
             android:text="Crear" />
 
         <ImageButton
             android:id="@+id/imageButton"
             android:layout_width="match_parent"
-            android:layout_height="62dp"
-            android:layout_marginTop="260dp"
-            android:src="@android:drawable/ic_media_previous" />
+            android:layout_height="42dp"
+            android:layout_marginTop="350dp"
+            android:background="@color/white"
+            android:scaleType="centerInside"
+            android:src="@drawable/hacia_atras" />
 
 
     </RelativeLayout>
